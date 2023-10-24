@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -42,10 +43,12 @@ fun Greeting( modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally)
     {
-        Column(modifier=modifier.weight(1f)){
-
+        Column(modifier=modifier.fillMaxWidth().background(Color.Green)){
+            Text(
+                text = "Imagen"
+            )
         }
-        Column(modifier=modifier.weight(1f)){
+        Column(modifier=modifier.weight(1f).background(Color.Blue)){
             Text(
                 text = "Artwork Title"
             )
@@ -53,7 +56,7 @@ fun Greeting( modifier: Modifier = Modifier) {
                 text = "Artwork Artist (Year)"
             )
         }
-        Row(modifier=modifier.weight(1f)){
+        Row(modifier=modifier.background(Color.Red)){
             Button(onClick = { }){
                 Text("Previous")
             }
