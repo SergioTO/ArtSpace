@@ -47,7 +47,6 @@ class MainActivity : ComponentActivity() {
 
 
 fun loadData(): ArrayList<DatosImagen> {
-    var aaa= "La escuela de Atenas"
     val datosImagenes = ArrayList<DatosImagen>()
     datosImagenes.add(DatosImagen(R.drawable.caminante_64390e7409ef4,"El caminante sobre el mar de nubes","Caspar David Friedrich", "1818"))
     datosImagenes.add(DatosImagen(R.drawable.elle_escuela_de_atenas_1_1586849897,"La escuela de Atenas","Rafael Sanzio", "1510-1512"))
