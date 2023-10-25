@@ -78,7 +78,7 @@ fun ArtApp(datos: ArrayList<DatosImagen>, modifier: Modifier = Modifier) {
             .background(Color.Green))
         {
             Image(painter = painterResource(datosImagenActual.id), contentDescription = datosImagenActual.titulo,
-                    modifier = modifier.fillMaxWidth().height(200.dp),
+                    modifier = modifier.fillMaxWidth().height(500.dp),
                             contentScale = ContentScale.Crop
             )
 
